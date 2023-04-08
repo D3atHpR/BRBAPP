@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BRBapp.NewPage4"
+             Title="Contas a Pagar">
+    <VerticalStackLayout>
+        <Label 
+            Text="Página ilustrativa"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image
+         Source="brb.svg" />
+        <StackLayout>
+            <Label Text="Pagar Conta" FontSize="Large" />
+            <Label Text="Favorecido" />
+            <Entry Placeholder="Nome do Favorecido" />
+            <Label Text="Valor" />
+            <Entry Placeholder="Digite o valor a ser pago" />
+            <Label Text="Data de Vencimento" />
+            <DatePicker />
+            <Label Text="Código de Barras" />
+            <Entry Placeholder="Digite o código de barras" />
+            <Button Text="Pagar" />
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

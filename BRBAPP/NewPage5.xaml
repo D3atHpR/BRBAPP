@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BRBapp.NewPage5"
+             Title="Todos os Cartões">
+    <StackLayout Padding="5" >
+
+        <Label Text="Seus Cartões"
+           FontSize="17"
+           FontAttributes="Bold"
+           HorizontalOptions="Center" />
+
+        <StackLayout Spacing="20">
+            <Frame BackgroundColor="White" Padding="20" CornerRadius="10" HasShadow="True">
+                <StackLayout Spacing="10">
+                    <Label Text="Banco: Banco do Brasil" FontAttributes="Bold" />
+                    <Label Text="Nome: José Oliveira" />
+                    <Label Text="Número: 4242 4242 4242 4242" />
+                    <Label Text="Saldo Disponível: R$5000,00" FontSize="Small"/>
+                    <Label Text="Gastos no Mês: R$2000,00" FontSize="Small"/>
+                    <Label x:Name="LabelValor" Text="R$0.00"/>
+                    <Label Text="Vencimento: 10/05/2023" FontSize="Small" />
+
+                    <Slider Minimum="0" Maximum="7000" ValueChanged="SliderValueChanged"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="White" Padding="20" CornerRadius="10" HasShadow="True">
+                <StackLayout Spacing="10">
+                    <Label Text="Banco: Bradesco" FontAttributes="Bold" />
+                    <Label Text="Nome: José Oliveira" />
+                    <Label Text="Número: 5555 5555 5555 5555" />
+                    <Label Text="Saldo Disponível: R$: 10.000,00" FontSize="Small"/>
+                    <Label Text="Gastos no Mês: R$3000,00" FontSize="Small"/>
+                    <Label x:Name="LabelValorA" Text="R$0.00"/>
+                    <Label Text="Vencimento: 15/05/2023" FontSize="Small" />
+
+                    <Slider Minimum="0" Maximum="13000" ValueChanged="SliderValue"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </StackLayout>
+</ContentPage>

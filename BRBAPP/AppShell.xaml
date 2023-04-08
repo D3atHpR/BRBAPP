@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BRBapp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BRBapp"
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="#003DA5">
+
+    <ShellContent
+        Title="BRB CARD" Icon="brb.svg"         
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" 
+ 
+        
+     />
+
+    <FlyoutItem Title="BRB Cartões">
+        <ShellContent ContentTemplate="{DataTemplate local:NewPage1}" Route="Cartoes" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Todos os seus Cartões de Crédito">
+        <ShellContent ContentTemplate="{DataTemplate local:NewPage5}" Route="cOpenFinance" />
+    </FlyoutItem>
+    
+
+</Shell>
