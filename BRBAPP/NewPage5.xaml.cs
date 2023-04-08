@@ -26,6 +26,7 @@ public partial class NewPage5 : ContentPage
 
     private void SliderValue(object sender, ValueChangedEventArgs e)
     {
+
         double gastos = 2000.00; // Valor dos gastos
         double disponivel = 8000.00; // Valor disponível
         double maximo = gastos + disponivel; // Valor máximo do slider
