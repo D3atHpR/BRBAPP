@@ -33,6 +33,29 @@
             </StackLayout>
         </Frame>
 
+        <Frame BackgroundColor="White" Padding="20" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10">
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Label Text="Itaú" FontAttributes="Bold" />
+                    <Label Text="Vencimento: 05/06/2023" HorizontalOptions="EndAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Label TextColor="Green" Text="Disponível:" />
+                    <Label TextColor="Green" Text="R$ 3500,00" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Label TextColor="Red" Text="Gastos no Mês:" />
+                    <Label TextColor="Red" Text="R$ 1000,00" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Label Text="Valor da Fatura:" />
+                    <Label x:Name="LabelValorA" Text="R$1000.00"  TextColor="Orange" />
+                </StackLayout>
+                <Slider Minimum="0" Maximum="5000" Value="1000" ValueChanged="SliderValue" ThumbColor="#0072c6" MinimumTrackColor="DodgerBlue"/>
+            </StackLayout>
+        </Frame>
+
+
 
 
 
