@@ -7,14 +7,20 @@ public partial class NewPage5 : ContentPage
 	public NewPage5()
 	{
 		InitializeComponent();
+
 	}
 
     private void SliderValueChanged(object sender, ValueChangedEventArgs e)
     {
-        
-        double value = e.NewValue;
-        string formattedValue = string.Format("R$ {0:N2}", value);
-        LabelValor.Text = formattedValue;
+
+        double gastos = 2000.00; // Valor dos gastos
+        double disponivel = 5000.00; // Valor disponível
+        double maximo = gastos + disponivel; // Valor máximo do slider
+
+        double novoValor = e.NewValue; // Novo valor do slider
+        double valorFatura = maximo * novoValor / 7000.00; // Valor da fatura proporcional ao slider
+
+        LabelValor.Text = $"R${valorFatura:F2}"; // Atualiza o texto do LabelValor com o valor da fatura
 
     }
 
@@ -23,7 +29,7 @@ public partial class NewPage5 : ContentPage
 
         double value = e.NewValue;
         string formattedValue = string.Format("R$ {0:N2}", value);
-        LabelValorA.Text = formattedValue;
+       //abelValorA.Text = formattedValue;
     }
 
 

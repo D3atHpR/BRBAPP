@@ -32,11 +32,7 @@ public partial class MainPage : ContentPage
 
 
 
-			private async void OnCounterClicked(object sender, EventArgs e)
-			{
-				await DisplayAlert("Novidades", "Temos Novidades em nossa seção de cartões", "Ok");
-
-			}
+			
 
     public class MyData
     {
@@ -46,10 +42,6 @@ public partial class MainPage : ContentPage
 
     
 
-    private async void OnClickFinance(object sender, EventArgs e)
-    {
-        await DisplayAlert("Seus Cartões", " Saiba mais sobre o BRB CARD", "OK");
-
-    }
+    
 }
 

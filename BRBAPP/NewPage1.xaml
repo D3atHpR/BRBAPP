@@ -22,37 +22,38 @@
                 <StackLayout Padding="10" >
                     <Image Source="nacional.png" HeightRequest="80" HorizontalOptions="CenterAndExpand"  />
                         <Label Text="Visa Nacional" FontSize="18" HorizontalOptions="CenterAndExpand" />
-                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand" Margin="0,25,0,0" />
-                    </StackLayout>
+                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand" Margin="0,25,0,0" BackgroundColor="#005AAA"/>
+                </StackLayout>
                 </Frame>
 
                 <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="LightGray" HasShadow="True">
                     <StackLayout Padding="10" >
                     <Image Source="nacional2.png" HeightRequest="80" HorizontalOptions="CenterAndExpand"  />
                     <Label Text="Mastercard nacional" FontSize="18" HorizontalOptions="CenterAndExpand"   />
-                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand" VerticalOptions="End" />
-                    </StackLayout>
+                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand" VerticalOptions="End" BackgroundColor="#005AAA"/>
+                </StackLayout>
                 </Frame>
 
                 <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="LightGray" HasShadow="True">
                     <StackLayout Padding="10">
                         <Image Source="prepago.png" HeightRequest="80" HorizontalOptions="CenterAndExpand" />
                     <Label Text="BRBCARD Pré-Pago" FontSize="18" HorizontalOptions="CenterAndExpand"  />
-                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand" />
-                    </StackLayout>
+                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand" BackgroundColor="#005AAA"/>
+                </StackLayout>
                 </Frame>
 
                 <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="LightGray" HasShadow="True">
                     <StackLayout Padding="10">
                         <Image Source="empresarial.png" HeightRequest="80" HorizontalOptions="CenterAndExpand" VerticalOptions="End" />
                     <Label Text="Mastercard Empresarial" FontSize="18" HorizontalOptions="CenterAndExpand"  />
-                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand"  />
+                    <Button Text="Saiba Mais" HorizontalOptions="CenterAndExpand" BackgroundColor="#005AAA"/>
                     </StackLayout>
                 </Frame>
 
             </Grid>
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Margin="0,0,0,20">
-            <Button Text="Peça seu Cartão utilizando o Open Finance" HorizontalOptions="CenterAndExpand" Margin="0,30,0,10" Clicked="Chamada" />
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Margin="20,0,0,20">
+            <Label Text="Aumente suas chances de aprovação permitindo o acesso pelo Open Finance" TextColor="Black" FontSize="18" HorizontalOptions="Center" Margin="0,0,0,30"/>
+            <Button Text="Pedir meu cartão BRB" HorizontalOptions="CenterAndExpand" Margin="0,30,0,10"  BackgroundColor="#005AAA"/>
         </StackLayout>
         <Image Source="brb.svg" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" HeightRequest="100" WidthRequest="250"/>
 
